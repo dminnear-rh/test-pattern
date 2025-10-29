@@ -1,3 +1,7 @@
+clusterGroup:
+  namespaces:
+    - nvidia-gpu-operator
+
   subscriptions:
     nvidia:
       name: gpu-operator-certified
