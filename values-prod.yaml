@@ -2,7 +2,7 @@ clusterGroup:
   name: prod
 
   namespaces:
-    - openshift-nfd
+    openshift-nfd:
 
   sharedValueFiles:
     - '/overrides/values-{{ $.Values.global.accelerator }}.yaml'

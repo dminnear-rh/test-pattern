@@ -1,6 +1,6 @@
 clusterGroup:
   namespaces:
-    - nvidia-gpu-operator
+    nvidia-gpu-operator:
 
   subscriptions:
     nvidia:
