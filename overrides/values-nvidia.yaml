@@ -1,0 +1,5 @@
+  subscriptions:
+    nvidia:
+      name: gpu-operator-certified
+      namespace: nvidia-gpu-operator
+      source: certified-operators

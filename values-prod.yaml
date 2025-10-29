@@ -1,0 +1,15 @@
+clusterGroup:
+  name: prod
+
+  namespaces:
+    - test-pattern
+
+  sharedValueFiles:
+    - '/overrides/values-{{ $.Values.global.accelerator }}.yaml'
+
+  subscriptions:
+    nfd:
+      name: nfd
+      namespace: openshift-nfd
+
+  applications: {}

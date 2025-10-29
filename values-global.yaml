@@ -1,0 +1,12 @@
+global:
+  pattern: test-pattern
+  secretLoader:
+    disabled: true
+  accelerator:
+    nvidia
+
+main:
+  clusterGroupName: prod
+  multiSourceConfig:
+    enabled: true
+    clusterGroupChartVersion: 0.9.*
