@@ -1,0 +1,23 @@
+clusterGroup:
+    name: prod
+    namespaces:
+        - repo
+        - vault
+        - golang-external-secrets
+    projects:
+        - repo
+        - prod
+    subscriptions: {}
+    applications:
+        golang-external-secrets:
+            name: golang-external-secrets
+            namespace: golang-external-secrets
+            project: prod
+            chart: golang-external-secrets
+            chartVersion: 0.1.*
+        vault:
+            name: vault
+            namespace: vault
+            project: prod
+            chart: hashicorp-vault
+            chartVersion: 0.1.*
